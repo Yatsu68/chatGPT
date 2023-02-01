@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="public/loader.css" />
+    <script src="public/index.js" async></script>
+    <title>OpenAi Test</title>
+  </head>
+  <body>
+    <main id="app">
+      <h1 class="animated-title">Chat GPT test</h1>
+      <section class="input-section">
+        <div class="textInputWrapper">
+          <form action="#" id="input-form">
+            <input placeholder="Type Here" type="text" class="textInput" />
+          </form>
+        </div>
+      </section>
+      <section class="response-section">
+        <div class="card">
+          <div class="align">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+
+          <h1>RESPONSE</h1>
+          <div class="text-display"></div>
+        </div>
+      </section>
+      <section class="loader-section">
+        <div class="spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+      <section class="message-start-section">
+        <div id="typed-strings">
+          <p>
+            You can try chatting <strong>ChatGPT</strong> from OpenAI anytime
+          </p>
+          <p>Some errors may however appear</p>
+          <p>We can't do anything about it sorry...</p>
+        </div>
+        <span id="typed"></span>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      const typed = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        typeSpeed: 20,
+        startDelay: 50,
+        backDelay: 750,
+        backSpeed: 20,
+        loop: true,
+        loopCount: Infinity,
+      });
+    </script>
+  </body>
+</html>
