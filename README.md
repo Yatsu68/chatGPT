@@ -9,3 +9,7 @@ To get an API Key, it is necessary to create an account on: https://platform.ope
 Once your account is created you can click on the top right button on the navbar and click "View API Keys", then you can generate API Keys.
 
 Note that you must never give this key to anyone, otherwise ill-intentioned people may cause you trouble.
+
+Have a fun time! 
+
+credit: Yat$u
